@@ -1,8 +1,8 @@
 var https = require("https");
 var lambdaRestClient = require("@lambdatest/node-rest-client");
 var lambdaCredentials = {
-  username: hecticodj,
-  accessKey: cTiWTW6JTl9hLPDPqf98nEX2xi58A2GG1KzaE0LwjXQ01Fn9wf
+  username: "hecticodj",
+  accessKey: "cTiWTW6JTl9hLPDPqf98nEX2xi58A2GG1KzaE0LwjXQ01Fn9wf"
 };
 var lambdaAutomationClient = lambdaRestClient.AutomationClient(
   lambdaCredentials
@@ -23,8 +23,6 @@ module.exports = {
   },
   afterEach: function(client, done) {
     if (
-      process.env.LT_USERNAME &&
-      process.env.LT_ACCESS_KEY &&
       client.capabilities &&
       client.capabilities["webdriver.remote.sessionid"]
     ) {
