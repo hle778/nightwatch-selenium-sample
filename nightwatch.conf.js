@@ -10,6 +10,7 @@ module.exports = (function(settings) {
   
   if (process.env.LT_ACCESS_KEY) {
     settings["test_settings"]["default"]["access_key"] = process.env.LT_ACCESS_KEY;
+  }
   else {
     settings["test_settings"]["default"]["access_key"] = cTiWTW6JTl9hLPDPqf98nEX2xi58A2GG1KzaE0LwjXQ01Fn9wf;
   }
