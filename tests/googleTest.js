@@ -15,7 +15,7 @@ module.exports = {
       .waitForElementPresent("body", 20000)
       .setValue("input[type=text]", "LambdaTest\n")
       .pause(2000)
-      .assert.title("LambdaTest - Google Search")
+      .assert.title("PRUEBA")
       .end();
   },
   after: function(browser) {
